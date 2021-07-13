@@ -83,7 +83,7 @@ celerybeat-schedule
 .env
 
 # virtualenv
-myenv/
+/myenv
 .myenv
 .venv
 venv/
