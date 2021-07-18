@@ -1,4 +1,5 @@
 {% extends 'fscohort/base.html' %}
+{% load crispy_forms_tags %}
 
 {% block title %}
     Update Student
@@ -10,7 +11,7 @@
 
     <form action="" method="POST">
         {% csrf_token %}
-        {{form.as_p}}
+        {{form | crispy}}
         <input type="submit" value="Update">
     </form>
 {% endblock content %}
